@@ -1,4 +1,5 @@
 class Vehicle
   include Mongoid::Document
-  belongs_to :resources, polymorphic: true
+  field :name, type: String
+  belongs_to :resourceable, polymorphic: true
 end
